@@ -1,0 +1,74 @@
+/* Styles for adri web */
+.mrg-top {
+	margin-top: 15px;
+}
+.mrg-top-lg {
+	margin-top: 25px;
+}
+.pdn-top-lg {
+	padding-top: 25px;
+}
+.navbar-default {
+	background-color: #2F3E9E;
+}
+.header-img {
+	background-image: url(../img/background2.jpg); 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: auto;
+  	padding-bottom: 15px;
+}
+.format-letters {		
+	color: white;
+	font-size: 40px;
+	letter-spacing: 0;
+	text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+}
+hr.star-light:after {	
+	background-color: white;
+	color: gray;	
+}
+section.success {	
+	background-color: #3E50B4;
+}
+footer .footer-above {
+	background-color: #3E50B4;	
+}
+.btn-send {
+	background-color: #5A5AFF;
+	border: 0px;
+}
+.jobs{
+	background-color: white;
+}
+.logos-jobs {
+	text-align: center;
+}
+.logo-enalcoi{
+	width: 100%;
+}
+.fhios-logo {
+	width: 225px;
+	padding-top: 10px;
+}
+/*  media */ 
+/* for mobiles */
+@media (max-width: 767px){
+	body {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 768px){	
+	.navbar-brand{
+    	font-size: 1.5em; 
+	}
+	header .intro-text .name {
+    	font-size: 3em;
+	}
+	header .intro-text .skills {
+    	font-size: 1.6em;
+	}
+}	    
+
