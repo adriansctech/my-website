@@ -48,12 +48,9 @@ footer .footer-above {
 .logo-enalcoi{
 	width: 100%;
 }
-.fhios-logo {
-	width: 225px;
-	padding-top: 10px;
+.altran-logo {
+	width: 150px;	
 }
-/*  media */ 
-/* for mobiles */
 @media (max-width: 767px){
 	body {
 		font-size: 10px;
