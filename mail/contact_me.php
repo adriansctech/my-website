@@ -1,4 +1,5 @@
 <?php
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
@@ -19,7 +20,7 @@ if(empty($_POST['name'])  		||
     }
 
 $data = array(
-                'secret' => 'XXXXXXXXX',//insert google captcha code
+                secret' => 'XXXXXXXXX',//insert google captcha code,
                 'response' => $_POST["captcha"],
                 'ip' => $ip
             );
@@ -29,7 +30,7 @@ $data = array(
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
             $result = json_decode(curl_exec($curl), true);
-            curl_close($curl);        
+            curl_close($curl);
 if($result["success"]===false)
 {
 	echo "Error en el captcha";
@@ -42,10 +43,11 @@ if($result["success"]===false)
 	$message = $_POST['message'];
 	
 	// Create the email and send the message
-	$to = 'adriansanchezcarchano@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the 		form will send a message to.
+  $to = 'adrian_sc@live.com'; // Add your email address inbetween the '' replacing  
+	//$to = 'adriansanchezcarchano@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the 		form will send a message to.
 	$email_subject = "Website Contact Form:  $name";
 	$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: 		$email_address\n\nPhone: $phone\n\nMessage:\n$message";
-	$headers = "From: noreply@adriansanchezcarchano.es\n"; // This is the email address the generated message will be from. We recommend using 		something like noreply@yourdomain.com.
+	$headers = "From: adrian_sc@live.com\n"; // This is the email address the generated message will be from. We recommend using 		something like noreply@yourdomain.com.
 	$headers .= "Reply-To: $email_address";	
 	mail($to,$email_subject,$email_body,$headers);
 	return true;	

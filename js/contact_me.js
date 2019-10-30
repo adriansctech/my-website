@@ -15,9 +15,9 @@ $(function() {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
-	    var captcha = $("textarea#g-recaptcha-response").val();
+	        var captcha = $("textarea#g-recaptcha-response").val();
             var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
+            // Check for white space in name for Success/Fail message            
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
@@ -29,7 +29,7 @@ $(function() {
                     phone: phone,
                     email: email,
                     message: message,
-		    captcha: captcha
+		            captcha: captcha
                 },
                 cache: false,
                 success: function() {
