@@ -52,6 +52,32 @@ footer .footer-above {
 .altran-logo {
 	width: 150px;	
 }
+#language-icon-en {
+	background-image:url('../img/language-icons/uk.ico');
+	background-color: transparent; 
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle; 
+}
+#language-icon-es {
+	background-image:url('../img/language-icons/sp.png');
+	background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle; 
+}
+.small-btn {
+    width: 32px;
+    height: 32px;
+}
+.languages {
+	padding-left: 15px;
+	padding-top: 15px;
+}
 @media (max-width: 767px){
 	body {
 		font-size: 10px;
